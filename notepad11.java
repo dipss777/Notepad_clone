@@ -5,10 +5,6 @@ import java.awt.*;
 import java.applet.Applet;
 import java.awt.event.*;
 
-/*
-    Step 2 Starts from here
-*/
-
 public class notepad11 extends KeyAdapter implements ActionListener
 {
    static int act = 0;
@@ -162,10 +158,6 @@ public class notepad11 extends KeyAdapter implements ActionListener
       f1.setLocationRelativeTo(null);
       f1.setVisible(true);
    }
-
-   /* 
-   		Step 3 Starts from here 
-   */
 
    public void actionPerformed(ActionEvent ae) 
    {
@@ -339,20 +331,12 @@ public class notepad11 extends KeyAdapter implements ActionListener
       }
    }
 
-   /* 
-   		Step 4 Starts from here 
-   */
-
    public void keyTyped(KeyEvent ke) 
    {
       cl = maintxt.getText().length();
       linecount = maintxt.getLineCount();
       detail.setText("Length: " + cl + "  "  + " Line: " + linecount);
    }
-
-   /* 
-   		Step 5 Starts from here 
-   */
 
    public static void main(String ar[]) 
    {
